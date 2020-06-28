@@ -6,4 +6,8 @@
 
 - Me siga no [Linkedin](https://www.linkedin.com/in/andr%C3%A9-luis-bonfim-04580682/).
 
-![Wallpaper LaunchBase - 1920x1080](https://user-images.githubusercontent.com/24885088/85932605-cc994c00-b8a3-11ea-9fc3-7c68d10adf44.png)
+# Features
+
+- :atom_symbol: **React Js** -- React é uma biblioteca JavaScript para criar interfaces com o usuário. 
+- :atom_symbol: **React Native** -- Uma biblioteca que fornece uma maneira de criar aplicativos nativos para Android e iOS.
+- :large_green_square: **Node Js** -- Node.js é um interpretador de JavaScript assíncrono com código aberto orientado a eventos.
