@@ -4,7 +4,7 @@
 
 - Os exercícios e desafios ficaram registrados aqui conforme o progresso no curso. Fique a vontade para verificar o meu progresso!
 
-- Me siga no [Linkedin](www.linkedin.com/in/andreluisbonfim) :smiley:
+- Me siga no <a href="www.linkedin.com/in/andreluisbonfim">Linkedin</a> :smiley:
 
 # Features
 
