@@ -10,4 +10,4 @@
 
 - :atom_symbol: **React Js** -- React é uma biblioteca JavaScript para criar interfaces com o usuário. 
 - :atom_symbol: **React Native** -- Uma biblioteca que fornece uma maneira de criar aplicativos nativos para Android e iOS.
-- :large_green_square: **Node Js** -- Node.js é um interpretador de JavaScript assíncrono com código aberto orientado a eventos.
+- :chart: **Node Js** -- Node.js é um interpretador de JavaScript assíncrono com código aberto orientado a eventos.
