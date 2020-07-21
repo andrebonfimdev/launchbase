@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: #282a36;
+  padding: 30px;
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li { 
+  display: inline;
+}
+
+.menu a {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #50fa7b;
+  transition: color 200ms;
+}
