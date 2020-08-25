@@ -1,0 +1,196 @@
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: var(--color-background-header);
+  padding: 2rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+.header-content p {
+  font-size: 1.12rem;
+  line-height: 1.75rem;
+}
+
+.header-content h1 {
+  margin-bottom: .6rem;
+}
+
+main h2 {
+  margin-bottom: 1rem;
+}
+
+.recipes-content {
+  margin-bottom: 2rem;
+}
+
+.recipes-content div+div {
+  margin-top: 1.8rem;
+}
+
+.recipes-content img {
+  width: 100%;
+  padding-bottom: .5rem;
+  border-radius: .9rem;
+}
+
+.recipes-content p {
+  padding-bottom: .3rem;
+}
+
+/* Style the Image Used to Trigger the Modal */
+
+.my-img {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.my-img:hover {
+  opacity: 0.7;
+}
+
+#img-modal {
+  width: 90%;
+  border-radius: 15px;
+}
+
+#my-modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#my-modal h2 {
+  color: var(--color-text-in-title);
+  font-size: 1.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: .31rem;
+  font-weight: normal;
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal Content (Image) */
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  height: auto;
+  width: 41.25rem;
+  padding-top: 1.87rem;
+  border-radius: 16px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+#modal-author {
+  padding-bottom: 3.75rem;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+/* The Close Button */
+
+.close {
+  color: var(--color-text-in-footer);
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s;
+  padding-bottom: 1.87rem;
+}
+
+.close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+    height: auto;
+  }
+  #my-modal h2 {
+    font-size: 1rem;
+  }
+  .close {
+    font-size: .7rem;
+  }
+}
+
+@media(min-width: 700px) {
+  .header-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    justify-items: self-end;
+    padding: 32px 60px;
+  }
+  .header-content img {
+    padding-right: 40px;
+  }
+  .recipes-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.25rem;
+  }
+  .recipes-content div+div {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,19 @@
+h1, h2 {
+  padding-bottom: 1.25rem;
+  font-size: 1.5rem;
+}
+
+h2 {
+  padding-top: 1.87rem;
+  font-size: 1.25rem;
+}
+
+#container main p {
+  font-size: 1.12rem;
+  line-height: 1.75rem;
+  color: var(--color-text-in-paragraph-secondary);
+}
+
+.display-web #menu-list-web a:first-child {
+  font-weight: bold;
+}
