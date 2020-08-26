@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+:root {
+  --color-purple: #7159c1;
+  --color-gray: rgb(75, 75, 75);
+  --color-purple-medium: rgb(154, 142, 191);
+  --color-purple-ligth: rgb(241, 239, 255);
+  --color-gray-medium: #1d1d24;
+} 
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+  background-color: var(--color-purple);
+  padding: 30px;
+}
+
+.menu {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li { 
+  display: inline;
+}
+
+.menu a {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 0 30px;
+  text-decoration: none;
+}
+
+#wrapper {
+  text-align: center;
+  padding: 60px;
+}
+
+#wrapper img {
+  border-radius: 50%;
+  height: 250px;
+}
+
+#wrapper h1 {
+	font-size: 50px;
+	color: var(--color-gray);
+	padding: 15px;
+}
+
+#wrapper h2, p {
+  color: var(--color-purple-medium);
+}
+
+.tecList ul {
+  list-style-type: none;
+  background-color: var(--color-purple-ligth);
+  padding: 50px;
+  text-align: center;
+}
+
+.tecList li {
+	padding: 20px 0px;
+	max-width: 500px;
+	margin: 20px auto;
+	font-weight: bold;
+  color: white;
+  font-size: 20px;
+	background-color: var(--color-purple);
+	border-radius: 5px;
+}
+
+.menu-footer {
+	background-color: var(--color-purple);
+	padding: 20px;
+	font-size: 15px;
+}
+
+.menu-footer a:hover {
+  opacity: 0.7;
+  transition: 200ms;
+}
+
