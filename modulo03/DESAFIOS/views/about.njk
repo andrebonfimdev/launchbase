@@ -1,49 +1,53 @@
-<!DOCTYPE html>
-<html>
+{% extends "layout.njk" %}
 
-<head>
-  <title>Rocketseat</title>
-  <link rel="icon" href="img/favicon-rocketseat.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/styles-about.css">
-</head>
+{% block head %}
+  <title>Sobre - Rocketseat</title>
+{% endblock %}
 
-<body>
-  <header>
-    <nav class="menu">
-      <ul>
-        <li><a href="https://discordapp.com/invite/gCRAFhc">Comunidade</a></li>
-        <li><a href="mailto: oi@rocketseat.com.br">Email</a></li>
-        <li><a href="tel: +5547992078767">Telefone</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="desafio2-3.html">Conteúdos</a></li>
-      </ul>
-    </nav>
-  </header>
+{% block content %}
   <main>
-    <div id="wrapper">
-      <img src="img/logo-rocketseat.png" alt="Logo da Rocketseat">
-      <h1>Rocketseat</h1>
-      <h2>As melhores tecnologias em programação, direto ao ponto e do jeito certo.</h2>
+    <div id="container-about">
+      <div class="content-header-about">
+        <img src="img/logo-rocketseat.png" alt="Logo da Rocketseat">
+        <h1>
+          <span class="title-decoration">#</span>Rocketseat</h1>
+        <p>As melhores tecnologias em programação, direto ao ponto e do jeito certo
+          <span>.</span></p>
+      </div>
+      <div class="tec-list">
+        <h1>
+          <span class="title-decoration">#</span>Features</h1>
+        <ul>
+          <div class="card">
+            <li>
+              <i class="fab fa-js-square">Javascript</i>
+              <p>JavaScript é uma linguagem de script usada em milhões de páginas web em todo o mundo ... A queridinha (S2) da galera e essencial para todos os nossos projetos(:)). Por isso ela está presente e operante aqui na Rocketseat!</p>
+            </li>
+          </div>
+          <div class="card">
+            <li>
+              <i class="fab fa-react">ReactJs</i>
+              <p>E para descomplicar esse mundo maravihoso do Javascript e do desenvolvimento web, focamos no que é essencial em nossa vida de developer. A praticidade, efetividade e solução rápida dos problemas ... Nosso fantástico ReactJs dá conta do recado e como respaldo é usado por milhões de usuários e empresas mundo afora e essencial para qualquer projeto.</p>
+            </li>
+          </div>
+          <div class="card">
+            <li>
+              <i class="fab fa-react">React Native</i>
+              <p>E não poderiamos dar continuidade ao nosso trablho com ReactJs sem usar o seu irmão mais novo React Native. Sem ele, fica muito mais difícil desenvolver para dispositivos mobile como Android e iOS.</p>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <h1></h1>
+      <p>Como o Diego Fernandes sempre diz. A Rocketseat encurta seu caminho na aprendizagem para o desenvolvimento web e traz toda a experiência acumulada de devs experientes e excelentes instrutores. 
+
+      A tecnologias apresentadas são hoje um dos melhores caminhos a se seguir e te levam mais fácil ao próximo nível e resultados de carreira. Porém, não quer dizer que são as únicas tecnologias utilizadas. 
+
+      O mundo do desenvolvimento é muito extenso e cada projeto demanda uma certa necessidade de stack. Porém o destaque apresentado as tecnologias acima, são comprovadas com milhares de projetos desenvolvidos e a grande experiência que a Rocketseat e seus desenvolvedores têm. 
+
+      Se você não quer ficar de fora de nenhuma novidade da Rocketseat e receber em primeira mão os lançamentos de nossos bootcamps e eventos, não deixe de nos seguir nas redes sociais!
+      </p>
     </div>
-    <div class="tecList">
-      <ul>
-        <li><i class="fas fa-angle-right"> Javascript</i></li>
-        <li><i class="fas fa-angle-right"> ReactJs</i></li>
-        <li><i class="fas fa-angle-right"> React Native</i></li>
-      </ul>
-    </div>
+
   </main>
-  <footer>
-    <div class="menu menu-footer">
-      <a href="http://fb.com/rocketseat" target="_blank"><i class="fab fa-facebook-square"> Facebook</i></a>
-      <a href="http://instagram.com/rocketseat_oficial" target="_blank"><i class="fab fa-instagram-square"> Instagram</i></a>
-      <a href="http://twitter.com/rocketseat" target="_blank"><i class="fab fa-twitter-square"> Twitter</i></a>
-      <a href="http://youtube.com/rocketseat" target="_blank"><i class="fab fa-youtube"> Youtube</i></a>
-    </div>
-  </footer>
-
-
-</body>
-
-</html>
+{% endblock %}

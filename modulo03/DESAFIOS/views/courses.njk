@@ -1,126 +1,151 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>Rocketseat</title>
-  <link rel="icon" href="img/favicon-rocketseat.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/styles-content.css">
-</head>
+  <head>
+    <title>Rocketseat</title>
+    <link rel="icon" href="img/favicon-rocketseat.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/menu.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/styles-content.css">
+  </head>
 
-<body>
-  <header>
-    <nav class="menu">
-      <ul>
-        <li class="logo-header"><a href="/"><img src="img/logo-rocketseat.png" alt="Logo da Rocketseat"></a></li>
-        <li><a href="https://discordapp.com/invite/gCRAFhc">Comunidade</a></li>
-        <li><a href="mailto: oi@rocketseat.com.br">Email</a></li>
-        <li><a href="tel: +5547992078767">Telefone</a></li>
-        <li><a href="desafio2-2.html">Sobre</a></li>
-        <li><a href="desafio2-3.html">Conteúdos</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div id="wrapper">
+  <body>
+    <header>
+      <nav class="menu">
+        <ul>
+          <li class="logo-header">
+            <a href="/"><img src="img/logo-rocketseat.png" alt="Logo da Rocketseat"></a>
+          </li>
+          <li>
+            <a href="https://discordapp.com/invite/gCRAFhc">Comunidade</a>
+          </li>
+          <li>
+            <a href="mailto: oi@rocketseat.com.br">Email</a>
+          </li>
+          <li>
+            <a href="tel: +5547992078767">Telefone</a>
+          </li>
+          <li>
+            <a href="/">Sobre</a>
+          </li>
+          <li>
+            <a href="/courses">Conteúdos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="wrapper">
 
-      <h1>Rocketseat</h1>
-      <h2>No meio de tanta informação e da quantidade de ferramentas que surgem todos os dias, você precisa de alguém que te leve na direção certa.</h2>
-      <div class="tec-list-c">
-        <i class="fab fa-js"></i>
-        <i class="fab fa-react"></i>
-        <i class="fab fa-node-js"></i>
+        <h1>Rocketseat</h1>
+        <h2>No meio de tanta informação e da quantidade de ferramentas que surgem todos os dias, você precisa de alguém que te leve na direção certa.</h2>
+        <div class="tec-list-c">
+          <i class="fab fa-js"></i>
+          <i class="fab fa-react"></i>
+          <i class="fab fa-node-js"></i>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card" id="starter">
+          <div class="card_image">
+            <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/starter.svg" alt="Logo da Rocketseat">
+          </div>
+          <div class="card-content card-rocket">
+            <p>O começo é fundamental!</p>
+          </div>
+          <div class="card-info">
+            <p>10 Modulos</p>
+            <p class="card-price">GRÁTIS</p>
+          </div>
+        </div>
+        <div class="card-decoration">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="card" id="">
+          <div class="card_image">
+            <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/launchbase.svg" alt="Logo da Rocketseat">
+          </div>
+          <div class="card-content card-launchbase">
+            <p>Preparamos a nossa base ...</p>
+          </div>
+          <div class="card-info">
+            <p>10 Modulos</p>
+            <p class="card-price">PAGO</p>
+          </div>
+        </div>
+        <div class="card-decoration">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="card" id="">
+          <div class="card_image">
+            <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/gostack.svg" alt="Logo da Rocketseat">
+          </div>
+          <div class="card-content card-gostack">
+            <p>... ao infinito e além!!</p>
+          </div>
+          <div class="card-info">
+            <p>10 Modulos</p>
+            <p class="card-price">PAGO</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section>
+      <div id="communitys">
+        <div class="community-content">
+          <h1>Acelere a sua evolução. Participe da nossa comunidade no Discord.</h1>
+          <p>Potencialize o seu aprendizado, destaque-se entre os programadores e ganhe prêmios exclusivos.</p>
+          <button class="btn-community">Acessar Comunidade</button>
+        </div>
+        <div class="img-community">
+          <img src="https://discord.com/assets/4a021d70e0c35ec16ef6d2502fd6ed5c.svg" alt="Comunidade no Discord">
+        </div>
+      </div>
+    </section>
+
+    <div class="modal-overlay">
+      <div class="modal maximize">
+        <a class="maximize-modal" onclick="openFullscreen();">
+          <i class="far fa-window-maximize"></i>
+        </a>
+        <a class="minimize-modal" onclick="closeFullscreen();">
+          <i class="fas fa-window-minimize"></i>
+        </a>
+        <a class="close-modal" onclick="closeFullscreen();">
+          <i class="far fa-window-close"></i>
+        </a>
+        <div class="modal-content">
+          <iframe frameborder="0"></iframe>
+        </div>
       </div>
     </div>
-    <div class="cards">
-      <div class="card" id="starter">
-        <div class="card_image">
-          <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/starter.svg" alt="Logo da Rocketseat">
-        </div>
-        <div class="card-content card-rocket">
-          <p>O começo é fundamental!</p>
-        </div>
-        <div class="card-info">
-          <p>10 Modulos</p>
-          <p class="card-price">GRÁTIS</p>
-        </div>
+    <footer>
+      <div class="menu menu-footer">
+        <a href="http://fb.com/rocketseat" target="_blank">
+          <i class="fab fa-facebook-square">
+            Facebook</i>
+        </a>
+        <a href="http://instagram.com/rocketseat_oficial" target="_blank">
+          <i class="fab fa-instagram-square">
+            Instagram</i>
+        </a>
+        <a href="http://twitter.com/rocketseat" target="_blank">
+          <i class="fab fa-twitter-square">
+            Twitter</i>
+        </a>
+        <a href="http://youtube.com/rocketseat" target="_blank">
+          <i class="fab fa-youtube">
+            Youtube</i>
+        </a>
+        <a class="logo-footer" href="/"><img src="https://rocketseat.com.br/static/images/gostack/logo-rocketseat.svg" alt="Rocketseat"></a>
       </div>
-      <div class="card-decoration">
-        <i class="fas fa-arrow-right"></i>
-      </div>
-      <div class="card"id="">
-        <div class="card_image">
-          <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/launchbase.svg" alt="Logo da Rocketseat">
-        </div>
-        <div class="card-content card-launchbase">
-          <p>Preparamos a nossa base ...</p>
-        </div>
-        <div class="card-info">
-          <p>10 Modulos</p>
-          <p class="card-price">PAGO</p>
-        </div>
-      </div>
-      <div class="card-decoration">
-        <i class="fas fa-arrow-right"></i>
-      </div>
-      <div class="card" id="">
-        <div class="card_image">
-          <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/gostack.svg" alt="Logo da Rocketseat">
-        </div>
-        <div class="card-content card-gostack">
-          <p>... ao infinito e além!!</p>
-        </div>
-        <div class="card-info">
-          <p>10 Modulos</p>
-          <p class="card-price">PAGO</p>
-        </div>
-      </div>
-    </div>
-  </main>
+    </footer>
 
-  <section>
-    <div id="communitys">
-      <div class="community-content">
-        <h1>Acelere a sua evolução. Participe da nossa comunidade no Discord.</h1>
-        <p>Potencialize o seu aprendizado, destaque-se entre os programadores e ganhe prêmios exclusivos.</p>
-        <button class="btn-community">Acessar Comunidade</button>
-      </div>
-      <div class="img-community">
-        <img src="https://discord.com/assets/4a021d70e0c35ec16ef6d2502fd6ed5c.svg" alt="Comunidade no Discord">
-      </div>
-    </div>
-  </section>
+    <script src="scripts/scripts.js"></script>
 
-  <div class="modal-overlay">
-    <div class="modal maximize">
-      <a class="maximize-modal" onclick="openFullscreen();">
-        <i class="far fa-window-maximize"></i>
-      </a>
-      <a class="minimize-modal" onclick="closeFullscreen();">
-        <i class="fas fa-window-minimize"></i>
-      </a>
-      <a class="close-modal" onclick="closeFullscreen();">
-        <i class="far fa-window-close"></i>
-      </a>
-      <div class="modal-content">
-        <iframe frameborder="0"></iframe>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <div class="menu menu-footer">
-      <a href="http://fb.com/rocketseat" target="_blank"><i class="fab fa-facebook-square"> Facebook</i></a>
-      <a href="http://instagram.com/rocketseat_oficial" target="_blank"><i class="fab fa-instagram-square">
-          Instagram</i></a>
-      <a href="http://twitter.com/rocketseat" target="_blank"><i class="fab fa-twitter-square"> Twitter</i></a>
-      <a href="http://youtube.com/rocketseat" target="_blank"><i class="fab fa-youtube"> Youtube</i></a>
-      <a class="logo-footer" href="/"><img src="https://rocketseat.com.br/static/images/gostack/logo-rocketseat.svg" alt="Rocketseat"></a>
-    </div>
-  </footer>
-
-  <script src="scripts/scripts.js"></script>
-
-</body>
+  </body>
 
 </html>

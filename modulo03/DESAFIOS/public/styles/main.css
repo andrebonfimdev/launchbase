@@ -1,0 +1,34 @@
+:root {
+  --color-background-primary: rgb(18,18,20);
+  --color-background-secondary: rgb(32,32,36);
+  --color-text-primary: rgb(225,225,230);
+  --color-text-secondary: #a8a8b3;
+  --color-rocket: rgb(130,87,230);
+  --color-decoration-primary: rgb(4,211,97);
+  --color-decoration-secondary: rgb(253,149,31);
+} 
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-background-primary);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+}
+
+#container {
+  width: 90vw;
+  max-width: 700px;
+}
