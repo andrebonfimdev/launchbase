@@ -1,0 +1,61 @@
+/* MODAL */
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: rgb(18, 18, 20);
+  width: 90%;
+  height: 90%;
+  margin: 5vh auto;
+  position: relative;
+}
+
+.modal .close-modal, 
+.maximize-modal,
+.minimize-modal {
+  color: white;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.maximize-modal {
+  right: 28px;
+}
+
+.minimize-modal {
+  right: 48px;
+}
+
+.maximize {
+  width: 100%;
+  height: 100%;
+}
+
+/* MODAL ACTIVE */
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+iframe {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 6%;
+}
+
+.fullscreen {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+}

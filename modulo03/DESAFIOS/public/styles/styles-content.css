@@ -1,0 +1,108 @@
+#wrapper h1 {
+  margin-top: 3rem;
+  font-size: 2.2rem;
+}
+
+.point-decoration {
+  color: var(--color-decoration-primary);
+}
+
+#wrapper p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tec-list-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+  font-size: 4rem;
+  opacity: 0.3;
+}
+
+.cards .card {
+  cursor: pointer;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.card-content, .card-info {
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+
+.card-info p {
+  color: var(--color-text-primary);
+  font-weight: bold;
+}
+
+.cards .card-info .card-price {
+  background-color: var(--color-background-secondary);
+  color: var(--color-decoration-secondary);
+  filter: brightness(80%);
+  border-radius: 1.25rem;
+  padding: .3rem 1.25rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-decoration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: var(--color-decoration-primary);
+}
+
+#communitys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+#communitys h1 {
+  font-size: 2.2rem;
+}
+
+#communitys .community-content p {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.community-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-community {
+  margin: 1rem 0 2rem 0;
+  color: var(--color-text-primary);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-community-content {
+  background-color: var(--color-rocket);
+  padding: 1.2rem;
+  border-radius: 2rem;
+}
+
+.img-community img {
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 4rem;
+}

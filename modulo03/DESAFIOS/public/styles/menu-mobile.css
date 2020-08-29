@@ -1,3 +1,7 @@
+#menu-list-web {
+  display: none;
+}
+
 header nav {
   display: flex;
   align-items: center;
@@ -40,7 +44,9 @@ header nav {
   display: block;
 }
 
-.menu-list a:hover {background-color: #ddd;}
+.menu-list a:hover {
+  background-color: #ddd;
+}
 
 .show {
   display: flex;
@@ -52,4 +58,34 @@ header nav {
 
 .logo img {
   width: 12rem;
+}
+
+@media (min-width: 700px) {
+  #menu-list {
+    display: none;
+  }
+  .display-web {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  #menu-list-web {
+    display: flex;
+  }
+  #menu-list-web ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  #menu-list-web ul a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-weight: bold;
+  }
+  #menu-list-web ul a:hover {
+    border-bottom: 2px solid var(--color-decoration-primary);
+    opacity: 0.9;
+  }
 }

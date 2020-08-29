@@ -1,13 +1,15 @@
 h1 {
   color: var(--color-text-primary);
   font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-p {
+.content-header-about p {
   position: relative;
   color: var(--color-text-secondary);
   text-align: center;
-  padding: 1rem 0 4rem 0;
+  padding-bottom: 3rem;
   font-size: 1.5rem;
   line-height: 2rem;
 }
@@ -16,11 +18,11 @@ p {
   color: var(--color-decoration-primary);
 }
 
-p span {
+.content-header-about p span {
   position: absolute;
   color: var(--color-decoration-secondary);
-  font-size: 3rem;
-  bottom: 72px;
+  font-size: 4rem;
+  bottom: 62px;
 }
 
 #container-about {
@@ -30,10 +32,10 @@ p span {
   flex-direction: column;
 }
 
-#container-about img {
+#content-about .content-header-about img {
   max-width: 100%;
   height: 12rem;
-  padding: 2rem 0;
+  margin: 3rem 0 2rem 0;
   border-radius: 50%;
 }
 
@@ -42,4 +44,74 @@ p span {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.tec-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  background-color: var(--color-background-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+.card-title {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 10px;
+  width: 100%;
+  border-bottom: 3px solid var(--color-decoration-secondary);
+}
+
+.card-title p {
+  color: var(--color-text-primary);
+  font-weight: bold;
+}
+
+.card-img {
+  max-width: 100%;
+  height: 1.2rem;
+}
+
+.card p {
+  padding: 0 .5rem;
+}
+
+.content-manifest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-manifest .card-img {
+  border-radius: 3px;
+}
+
+.content-manifest p {
+  padding-bottom: 1rem;
+}
+
+.content-manifest p:last-child {
+  padding-bottom: 0;
+}
+
+@media (min-width: 700px) {
+  .card {
+    padding: 2.5rem;
+  }
+  .card-title {
+    margin-bottom: 2rem;
+  }
 }

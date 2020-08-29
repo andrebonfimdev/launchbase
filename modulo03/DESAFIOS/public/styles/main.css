@@ -1,14 +1,14 @@
 :root {
-  --color-background-primary: rgb(18,18,20);
-  --color-background-secondary: rgb(32,32,36);
-  --color-text-primary: rgb(225,225,230);
+  --color-background-primary: rgb(18, 18, 20);
+  --color-background-secondary: rgb(32, 32, 36);
+  --color-text-primary: rgb(225, 225, 230);
   --color-text-secondary: #a8a8b3;
-  --color-rocket: rgb(130,87,230);
-  --color-decoration-primary: rgb(4,211,97);
-  --color-decoration-secondary: rgb(253,149,31);
-} 
+  --color-rocket: rgb(130, 87, 230);
+  --color-decoration-primary: rgb(4, 211, 97);
+  --color-decoration-secondary: rgb(253, 149, 31);
+}
 
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -28,7 +28,61 @@ header {
   width: 100%;
 }
 
+ul {
+  list-style-type: none;
+}
+
+p {
+  color: var(--color-text-secondary);
+  line-height: 1.56rem;
+}
+
 #container {
   width: 90vw;
   max-width: 700px;
+}
+
+.content-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+  background-color: var(--color-background-primary);
+}
+
+.links-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.links-footer a {
+  color: var(--color-text-secondary);
+}
+
+.links-footer a:hover {
+  color: var(--color-decoration-primary);
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: .5rem;
+}
+
+.logo-footer p {
+  font-size: .8rem;
+}
+
+.logo-footer i {
+  color: var(--color-rocket);
+}
+
+.logo-footer img {
+  max-width: 100%;
+  height: .5rem;
 }
