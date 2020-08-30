@@ -87,5 +87,6 @@ header nav {
   #menu-list-web ul a:hover {
     border-bottom: 2px solid var(--color-decoration-primary);
     opacity: 0.9;
+    transition: 0.2s;
   }
 }
