@@ -68,6 +68,10 @@ body #container .fw-mobile {
   color: var(--color-decoration-primary);
 }
 
+.card-decoration:last-child {
+  display: none;
+}
+
 #communitys {
   display: flex;
   justify-content: center;
@@ -129,6 +133,9 @@ body #container .fw-mobile {
     padding: 2rem 0 6rem 0;
     font-size: 9rem;
     margin-bottom: 0;
+  }
+  body .cards .card {
+    justify-content: space-between;
   }
 }
 

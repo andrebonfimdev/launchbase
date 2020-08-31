@@ -116,8 +116,12 @@ h1 {
   .card {
     padding: 2.5rem;
     height: 290px;
+    justify-content: end;
   }
   .card-title {
     margin-bottom: 2rem;
+  }
+  .content-manifest {
+    height: 350px;
   }
 }

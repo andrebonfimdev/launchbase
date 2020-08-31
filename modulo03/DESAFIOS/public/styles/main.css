@@ -94,3 +94,8 @@ p {
   }
 }
 
+@media (min-width: 1023px) {
+  body #container .logo-footer p {
+    font-size: 80%;
+  }
+}

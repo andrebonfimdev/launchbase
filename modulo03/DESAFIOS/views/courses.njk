@@ -20,50 +20,24 @@
       </div>
     </div>
     <div class="cards">
-      <div class="card" id="starter">
+      {% for item in items %}
+      <div class="card" id="{{item.id}}">
         <div class="card_image">
-          <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/starter.svg" alt="Logo da Rocketseat">
+          <img src="{{item.image}}" alt="{{item.alt}}">
         </div>
         <div class="card-content card-rocket">
-          <p>O começo é fundamental!</p>
+          <p>{{item.description}}</p>
         </div>
         <div class="card-info">
-          <p>10 Modulos</p>
-          <p class="card-price">GRÁTIS</p>
+          <p>{{item.modules}}</p>
+          <p class="card-price">{{item.price}}</p>
         </div>
       </div>
       <div class="card-decoration">
         <i class="fas fa-arrow-down fw-web"></i>
         <i class="fas fa-arrow-right fw-mobile"></i>
       </div>
-      <div class="card" id="">
-        <div class="card_image">
-          <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/launchbase.svg" alt="Logo da Rocketseat">
-        </div>
-        <div class="card-content card-launchbase">
-          <p>Preparamos a nossa base ...</p>
-        </div>
-        <div class="card-info">
-          <p>10 Modulos</p>
-          <p class="card-price">PAGO</p>
-        </div>
-      </div>
-      <div class="card-decoration">
-        <i class="fas fa-arrow-down fw-web"></i>
-        <i class="fas fa-arrow-right fw-mobile"></i>
-      </div>
-      <div class="card" id="">
-        <div class="card_image">
-          <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/gostack.svg" alt="Logo da Rocketseat">
-        </div>
-        <div class="card-content card-gostack">
-          <p>... ao infinito e além!!</p>
-        </div>
-        <div class="card-info">
-          <p>10 Modulos</p>
-          <p class="card-price">PAGO</p>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </main>
 

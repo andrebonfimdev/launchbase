@@ -17,27 +17,15 @@
       <h1>
         <span class="title-decoration">#</span>Features</h1>
       <div class="tec-list">
+        {% for item in items %}
           <div class="card">
               <div class="card-title">
-                <img class="card-img" src="/img/javascript-icon.svg" alt="Logo do Javascript">
-                <p>Javascript</p>
+                <img class="card-img" src="/img/javascript-icon.svg" alt="Logo do {{item.name}}">
+                <p>{{item.name}}</p>
               </div>
-              <p>JavaScript é uma linguagem de script usada em milhões de páginas web em todo o mundo ... A queridinha da galera e essencial para todos os nossos projetos. Por isso ela está presente e operante aqui na Rocketseat!</p>
+              <p>{{item.description}}</p>
           </div>
-          <div class="card">
-              <div class="card-title">
-                <img class="card-img" src="img/react-icon.svg" alt="Logo do ReactJs">
-                <p>ReactJs</p>
-              </div>
-              <p>E para descomplicar esse mundo maravilhoso do Javascript e web developer, focamos na praticidade, efetividade e solução rápida para os problemas que o nosso fantásticoReactJs apresenta.</p>
-          </div>
-          <div class="card">
-              <div class="card-title">
-                <img class="card-img" src="img/react-icon.svg" alt="Logo do React Native">
-                <p>React Native</p>
-              </div>
-              <p>Não poderiamos dar continuidade ao nosso trablho com ReactJs sem usar o seu irmão mais novo React Native. Sem ele, fica muito mais difícil desenvolver para dispositivos mobile como Android e iOS.</p>
-          </div>
+        {% endfor %}
       </div>
       <h1>
         <span class="title-decoration">#</span>Manifesto
