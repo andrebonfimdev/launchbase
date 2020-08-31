@@ -1,0 +1,26 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <title>Página não encontrada!</title>
+  <link rel="stylesheet" href="styles/404.css">
+{% endblock %}
+
+{% block content %}
+    <div class="content-header">
+      <div class="content-img">
+        <img src="/img/black-hole.svg" alt="Buraco Negro">
+      </div>
+      <div class="content-text">
+        <h1>404<span>...</span></h1>
+        <p>OK! Você acabou perdendo-se em sua viagem, mas vamos te ajudar. Você têm dois caminhos para seguir: divirta-se com o nostálgico Duck Hunt abaixo ou clique no botão logo abaixo dele e volte ao início do trajeto!
+          <i class="fas fa-smile-wink"></i>
+        </p>
+      </div>
+    </div>
+    <div class="duck-game">
+      <iframe src="http://duckhuntjs.com/" frameborder="0"></iframe>
+    </div>
+    <a class="btn-home" href="/">
+      <div class="btn-home-content">Volte aqui</div>
+    </a>
+{% endblock %}

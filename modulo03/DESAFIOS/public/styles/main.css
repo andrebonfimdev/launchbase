@@ -86,3 +86,11 @@ p {
   max-width: 100%;
   height: .5rem;
 }
+
+@media (min-width: 700px) {
+  #container {
+    width: 90vw;
+    max-width: 1024px;
+  }
+}
+

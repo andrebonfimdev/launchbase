@@ -59,7 +59,7 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   padding: 1rem;
   border-radius: .5rem;
 }
@@ -108,8 +108,14 @@ h1 {
 }
 
 @media (min-width: 700px) {
+  .tec-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
   .card {
     padding: 2.5rem;
+    height: 290px;
   }
   .card-title {
     margin-bottom: 2rem;

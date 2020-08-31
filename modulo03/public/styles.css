@@ -114,6 +114,7 @@ header .menu {
 
 .card {
   background-color: var(--color-rocket);
+  display: grid;
 }
 
 .card_image-container img {
@@ -127,6 +128,7 @@ header .menu {
 .card_info {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .card_price {
