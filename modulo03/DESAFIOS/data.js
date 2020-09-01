@@ -17,7 +17,7 @@ module.exports = {
       price: "PAGO"
     },
     {
-      id: "starter",
+      id: "gostack",
       image: "https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/gostack.svg",
       alt: "Logo do Gostack",
       description: "... ao infinito e além!!",

@@ -14,6 +14,25 @@
   border: 0;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-background-secondary) var(--color-decoration-primary);
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-background-secondary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-decoration-primary);
+  border-radius: 20px;
+  border: 3px solid var(--color-background-secondary);
+}
+
 body {
   display: flex;
   flex-direction: column;
