@@ -1,0 +1,23 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <title>Página não encontrada!</title>
+{% endblock %}
+
+{% block content %}
+  <div class="page-not-found">
+    <div>
+      <img src="/images/error-page.jpg" alt="Cook">
+    </div>
+    <div>
+      <h1>404</h1>
+      <h2>Ops!</h2>
+      <p>Caminho errado cozinheiro...</p>
+    </div>
+  </div>
+  <div class="footer-error">
+    <a href="/">
+      <button class="btn-error">Voltar</button>
+    </a>
+  </div>
+{% endblock %}

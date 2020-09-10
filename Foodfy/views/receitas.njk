@@ -1,103 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout.njk" %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/Foodfy/public/images/favicon.png" />
-  <title>Foodfy</title>
+{% block head %}
+  <title>Foodfy - Receitas</title>
+  <link rel="stylesheet" href="styles/home.css">
 
-  <link rel="stylesheet" href="../public/styles/main.css">
-  <link rel="stylesheet" href="../public/styles/menu.css">
-  <link rel="stylesheet" href="../public/styles/home.css">
-  <link rel="stylesheet" href="../public/styles/footer.css">
+  <script src="/scripts/modal.js" defer="defer"></script>
+{% endblock %}
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-
-  <script src="../public/scripts/menu.js" defer></script>
-  <script src="../public/scripts/modal.js" defer></script>
-</head>
-
-<body>
-  <div id="container">
-    <header>
-      <nav>
-        <div id="menu-list">
-          <i onclick="menuMobile()" class="fas fa-bars menu-btn"></i>
-          <ul id="menu-list-ul" class="menu-list-content">
-            <a href="sobre.html">
-              <li>Sobre</li>
-            </a>
-            <a href="receitas.html">
-              <li>Receitas</li>
-            </a>
-          </ul>
-        </div>
-        <div class="display-web">
-          <a href="index.html"><img src="../public/images/logo.png" alt="Logo"></a>
-          <div id="menu-list-web">
-            <ul>
-              <a href="#">
-                <li>Sobre</li>
-              </a>
-              <a href="#">
-                <li>Receitas</li>
-              </a>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <div class="recipes-content">
-        <div class="card">
-          <img class="my-img" src="../public/images/burger.png" alt="Triplo bacon burger">
-          <p>Triplo bacon burger</p>
-          <small>por Jorge Relato</small>
-        </div>
-        <div class="card">
-          <img class=" my-img" src="../public/images/pizza.png" alt="Pizza 4 estações">
-          <p>Pizza 4 estações</p>
-          <small>por Fabiana Melo</small>
-        </div>
-        <div class="card">
-          <img class=" my-img" src="../public/images/espaguete.png" alt="Espaguete ao alho">
-          <p>Espaguete ao alho</p>
-          <small>por Júlia Kinoto</small>
-        </div>
-        <div class="card">
-          <img class=" my-img" src="../public/images/lasanha.png" alt="Lasanha mac n’ cheese">
-          <p>Lasanha mac n’ cheese</p>
-          <small>por Juliano Vieira</small>
-        </div>
-        <div class="card">
-          <img class=" my-img" src="../public/images/doce.png" alt="Docinhos pão-do-céu">
-          <p>Docinhos pão-do-céu</p>
-          <small>por Ricardo Golvea</small>
-        </div>
-        <div class="card">
-          <img class=" my-img" src="../public/images/asinhas.png" alt="Asinhas de frango ao barbecue">
-          <p>Asinhas de frango ao barbecue</p>
-          <small>por Vania Steroski</small>
-        </div>
+{% block content %}
+  <div class="recipes-content">
+    {% for item in items %}
+      <div class="card">
+        <img class="my-img" src="{{item.image}}" alt="{{item.title}}">
+        <p>{{item.title}}</p>
+        <small>{{item.description}}</small>
       </div>
-    </main>
-    <footer>
-      <p>Todos direitos reservados, receitas Foodfy.</p>
-    </footer>
-    <div id="my-modal" class="modal">
-      <div class="modal-content">
-        <img id="img-modal">
-        <h2 id="modal-title"></h2>
-        <small id="modal-author"></small>
-        <div class="close" onclick="document.getElementById('my-modal').style.display='none'">Fechar</div>
-      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
+
+{% block modal %}
+  <div id="my-modal" class="modal">
+    <div class="modal-content">
+      <img id="img-modal">
+      <h2 id="modal-title"></h2>
+      <small id="modal-author"></small>
+      <div class="close" onclick="document.getElementById('my-modal').style.display='none'">Fechar</div>
     </div>
   </div>
-</body>
-
-</html>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends  "layout.njk" %}
+
+{% block head %}
+  <title>Sobre - {{about.name}}</title>
+{% endblock %}
+
+{% block content %}
+<div id="wrapper">
+  <img src="{{about.avatar_url}}" alt="Imagem de Perfil">
+  <h1>{{about.name}}</h1>
+  <h2>{{about.role}}</h2>
+</div>
+
+<div class="menu menu-footer">
+  {% for link in about.links %}
+  <a href="{{link.url}}" target="_blank"><i class="{{link.icon}}"> {{link.name}}</i></a>
+  {% endfor %}
+</div>
+{% endblock %}
